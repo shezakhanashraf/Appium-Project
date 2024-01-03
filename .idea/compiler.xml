@@ -9,8 +9,5 @@
         <module name="AppiumSession2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="AppiumSession2" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
