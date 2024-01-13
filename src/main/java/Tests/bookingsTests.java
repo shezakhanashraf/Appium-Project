@@ -29,9 +29,9 @@ public class bookingsTests {
 
     @Test
     @Epic("Booking.com")
-    @Feature("Booking Deatils")
-    @Description("From this Test Case User should be able to create a New Account")
-    @Story("When user should create a New Account for login into the application")
+    @Feature("Booking Details")
+    @Description("From this Test Case User should be able to Search for Bookings")
+    @Story("User books a ride after landing on the booking page")
     @Severity(SeverityLevel.CRITICAL)
     public void searchBookings() throws Exception {
 

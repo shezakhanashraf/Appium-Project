@@ -71,4 +71,16 @@ public class configReader {
         if(appiumServerURL != null) return appiumServerURL;
         else throw new RuntimeException("appium Server URL not found");
     }
+
+    public String getAppActivity(){
+        String appActivity = properties.getProperty("appActivity");
+        if(appActivity != null) return appActivity;
+        else throw new RuntimeException("app Activity not found");
+    }
+
+    public String getAppPackage(){
+        String appPackage = properties.getProperty("appPackage");
+        if(appPackage != null) return appPackage;
+        else throw new RuntimeException("app Package not found");
+    }
 }

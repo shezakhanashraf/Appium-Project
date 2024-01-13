@@ -1,6 +1,4 @@
 package actionWrappers;
-
-
 import baseTest.AppDriver;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebDriver;
@@ -22,9 +20,14 @@ public class wrappers {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public void clickButton(WebElement buttonLocator){
+    public void clickButton(WebElement buttonLocator) {
         waitForElementEnabled(driver, buttonLocator);
         buttonLocator.click();
     }
 
+    public void sendText(WebElement element, String text) {
+        waitForElementEnabled(driver, element);
+        element.clear();
+        element.sendKeys(text);
+    }
 }

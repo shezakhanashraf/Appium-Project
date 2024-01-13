@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb80b583-bc5e-4f06-8096-117a3215ce4e" name="Changes" comment="appium project" />
+    <list default="true" id="eb80b583-bc5e-4f06-8096-117a3215ce4e" name="Changes" comment="appium project">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AppiumSession2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/bookingsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/bookingsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/loginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/loginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/actionWrappers/wrappers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actionWrappers/wrappers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseTest/AppFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseTest/AppFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/loginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/configReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/configReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tests/loginTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/loginTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/actionWrappers/wrappers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/actionWrappers/wrappers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/baseTest/AppFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/baseTest/AppFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/loginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/loginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/configReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/configReader.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +41,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2aa7b84b-0e86-4dd5-ba58-643c9d5b3e3e" />
+        <option name="url" value="https://github.com/shezakhanashraf/Appium-Project.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,8 +81,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/sheza.ashraf/IdeaProjects/AppiumSession2&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
@@ -64,8 +97,18 @@
       <recent name="baseTest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.loginTests.createAccount">
-    <configuration name="bookingsTests.searchBookings" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.loginTests">
+    <configuration name="C:/Users/sheza.ashraf/IdeaProjects/AppiumSession2/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumSession2" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bookingsTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AppiumSession2" />
       <extension name="coverage">
         <pattern>
@@ -75,8 +118,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.bookingsTests" />
-      <option name="METHOD_NAME" value="searchBookings" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumSession2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.loginTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -101,42 +160,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="searchTestsAttractions" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AppiumSession2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.searchTestsAttractions" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="searchTestsAttractions.searchLocation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AppiumSession2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.searchTestsAttractions" />
-      <option name="METHOD_NAME" value="searchLocation" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="signinTests.signinAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="signinTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AppiumSession2" />
       <extension name="coverage">
         <pattern>
@@ -146,8 +170,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.signinTests" />
-      <option name="METHOD_NAME" value="signinAccount" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -156,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.loginTests" />
+        <item itemvalue="TestNG.bookingsTests" />
         <item itemvalue="TestNG.loginTests.createAccount" />
-        <item itemvalue="TestNG.bookingsTests.searchBookings" />
-        <item itemvalue="TestNG.searchTestsAttractions.searchLocation" />
-        <item itemvalue="TestNG.signinTests.signinAccount" />
-        <item itemvalue="TestNG.searchTestsAttractions" />
+        <item itemvalue="TestNG.signinTests" />
+        <item itemvalue="TestNG.C:/Users/sheza.ashraf/IdeaProjects/AppiumSession2/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -189,5 +212,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="appium project" />
     <option name="LAST_COMMIT_MESSAGE" value="appium project" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AppiumSession2$loginTests_createAccount.ic" NAME="loginTests.createAccount Coverage Results" MODIFIED="1704550025003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Tests.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -26,7 +26,7 @@ public class loginPage {
     @FindBy(id = "com.booking:id/identity_text_input_edit_text")
     public WebElement userName_txtField;
 
-    @FindBy(id = "com.booking:id/identity_landing_social_button")
+    @FindBy(id = "com.booking:id/identity_landing_social_button_text")
     public WebElement continue_btn;
 
     @FindBy(id = "com.booking:id/identity_text_input_edit_text")
@@ -43,6 +43,9 @@ public class loginPage {
     @FindBy(id = "com.booking:id/genius_onbaording_bottomsheet_cta")
     public WebElement onboarding_btn;
 
+    @FindBy(id = "com.booking:id/action_primary")
+    public WebElement signintosave_btn;
+
 
     public void waitforElement(WebDriver d, WebElement elem){
         WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(100));
@@ -55,15 +58,15 @@ public class loginPage {
     }
 
     public void clickOnCreateAccount(){
-       waitforElement(AppDriver.getDriver(),sign_withEmail);
+        waitforElement(AppDriver.getDriver(),sign_withEmail);
         //sign_withEmail.click();
         w.clickButton(sign_withEmail);
-
     }
 
     public void enterEmail(String email){
         waitforElement(AppDriver.getDriver(),userName_txtField);
-        userName_txtField.sendKeys(email);
+        //userName_txtField.sendKeys(email);
+        w.sendText(userName_txtField,email);
     }
 
     public void enterPassword(String pass){
@@ -90,6 +93,11 @@ public class loginPage {
     public void onbaordingBtn(){
         waitforElement(AppDriver.getDriver(),onboarding_btn);
         onboarding_btn.click();
+    }
+
+    public void clickOnSignintosave(){
+        waitforElement(AppDriver.getDriver(),signintosave_btn);
+        w.clickButton(signintosave_btn);
     }
 
 }

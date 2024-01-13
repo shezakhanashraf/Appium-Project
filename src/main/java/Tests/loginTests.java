@@ -18,7 +18,7 @@ public class loginTests {
     AppFactory factory;
 
     @BeforeTest
-    public void setup() throws MalformedURLException {
+    public void setup() throws MalformedURLException, InterruptedException {
 
         excReader = new excelReader();
         excReader.readExcelFile();
@@ -33,8 +33,8 @@ public class loginTests {
     @Description("From this Test Case User should be able to create a New Account")
     @Story("When user should create a New Account for login into the application")
     @Severity(SeverityLevel.CRITICAL)
-    public void createAccount() {
-
+    public void createAccount() throws InterruptedException {
+        Thread.sleep(80000);
         String email = excelReader.GetCellValue(1,0);
         String password = excelReader.GetCellValue(1,1);
         login.clickOnCreateAccount();
@@ -44,7 +44,7 @@ public class loginTests {
         Assert.assertTrue(login.tittle_header.isDisplayed());
         login.enterConfirmPassword(password);
         login.createAccountBtn();
-        //Thread.sleep(15000);
+        Thread.sleep(15000);
         login.onbaordingBtn();
     }
 
