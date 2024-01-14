@@ -1,5 +1,6 @@
 package pages;
 
+import actionWrappers.wrappers;
 import baseTest.AppDriver;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -14,6 +15,7 @@ import java.time.Duration;
 
 public class searchPageAttractions {
 
+    wrappers w = new wrappers();
     AppDriver app = new AppDriver();
     public searchPageAttractions(){
         PageFactory.initElements(new AppiumFieldDecorator(AppDriver.getDriver()), this);
@@ -47,60 +49,42 @@ public class searchPageAttractions {
     @FindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Navigate up\"]")
     public WebElement cancelsignin_btn;
 
-    public void waitforElement(WebDriver d, WebElement elem){
-        WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(100));
-        wait.until(ExpectedConditions.visibilityOf(elem));
-    }
-
     public void scroll(String str){
         app.getDriver().findElement(new AppiumBy.ByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).index(0)).scrollIntoView" + "(new UiSelector().text" + "(\""+str+"\"))"));}
 
     public void clickOnAttractionsTab(){
-        waitforElement(AppDriver.getDriver(),attractions_btn);
-        attractions_btn.click();
+        w.clickButton(attractions_btn);
     }
 
     public void searchForDestination(){
-        waitforElement(AppDriver.getDriver(),going_btn);
-        going_btn.click();
+        w.clickButton(going_btn);
     }
 
     public void enterDestination(String destination){
-        waitforElement(AppDriver.getDriver(),going_txtField);
-        going_txtField.sendKeys(destination);
+        w.sendText(going_txtField,destination);
     }
 
     public void selectUSA(){
-        waitforElement(AppDriver.getDriver(),usa_btn);
-        usa_btn.click();
+        w.clickButton(usa_btn);
     }
 
     public void clickOnDatePicker(){
-        waitforElement(AppDriver.getDriver(),date_textBtn);
-        date_textBtn.click();
+        w.clickButton(date_textBtn);
     }
 
     public void pickDate(){
-        waitforElement(AppDriver.getDriver(),date_select);
-        date_select.click();
+        w.clickButton(date_select);
     }
 
     public void clickOnApply(){
-        waitforElement(AppDriver.getDriver(),applyatt_Btn);
-        applyatt_Btn.click();
+        w.clickButton(applyatt_Btn);
     }
 
     public void clickOnSearch(){
-        waitforElement(AppDriver.getDriver(),searchatt_Btn);
-        searchatt_Btn.click();
+        w.clickButton(searchatt_Btn);
     }
 
     public void cancelSignIn(){
-        waitforElement(AppDriver.getDriver(),cancelsignin_btn);
-        cancelsignin_btn.click();
+        w.clickButton(cancelsignin_btn);
     }
-
-
-
-
 }

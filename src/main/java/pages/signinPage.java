@@ -1,5 +1,6 @@
 package pages;
 
+import actionWrappers.wrappers;
 import baseTest.AppDriver;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -14,6 +15,7 @@ import java.time.Duration;
 
 public class signinPage {
 
+    wrappers w = new wrappers();
     AppDriver app = new AppDriver();
     public signinPage(){
         PageFactory.initElements(new AppiumFieldDecorator(AppDriver.getDriver()), this);
@@ -40,49 +42,34 @@ public class signinPage {
     @FindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Navigate up\"]")
     public WebElement cancelsignin_btn;
 
-
-
-    public void waitforElement(WebDriver d, WebElement elem){
-        WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(100));
-        wait.until(ExpectedConditions.visibilityOf(elem));
-    }
-
-
-    public void clickOnSignIn(){
-        waitforElement(AppDriver.getDriver(),signin_btn);
-        signin_btn.click();
-    }
-
     public void scroll(String str){ app.getDriver().findElement(new AppiumBy.ByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).index(0)).scrollIntoView" + "(new UiSelector().text" + "(\""+str+"\"))"));}
 
+    public void clickOnSignIn(){
+        w.clickButton(signin_btn);
+    }
+
     public void clickOnCustomerService(){
-        waitforElement(AppDriver.getDriver(),customerservice_btn);
-        customerservice_btn.click();
+        w.clickButton(customerservice_btn);
     }
 
     public void clickOnAirportTaxi(){
-        waitforElement(AppDriver.getDriver(),airporttaxi_btn);
-        airporttaxi_btn.click();
+        w.clickButton(airporttaxi_btn);
     }
 
     public void clickOnManageBooking(){
-        waitforElement(AppDriver.getDriver(),managebooking_btn);
-        managebooking_btn.click();
+        w.clickButton(managebooking_btn);
     }
 
     public void clickOnCancelBooking(){
-        waitforElement(AppDriver.getDriver(),cancelbooking_btn);
-        cancelbooking_btn.click();
+        w.clickButton(cancelbooking_btn);
     }
 
     public void clickOnThumbsUp(){
-        waitforElement(AppDriver.getDriver(),thumbsup_btn);
-        thumbsup_btn.click();
+        w.clickButton(thumbsup_btn);
     }
 
     public void cancelSignIn(){
-        waitforElement(AppDriver.getDriver(),cancelsignin_btn);
-        cancelsignin_btn.click();
+        w.clickButton(cancelsignin_btn);
     }
 }
 

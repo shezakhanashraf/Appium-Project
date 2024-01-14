@@ -1,5 +1,6 @@
 package pages;
 
+import actionWrappers.wrappers;
 import baseTest.AppDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +14,7 @@ import java.time.Duration;
 
 public class searchPageStays {
 
+    wrappers w = new wrappers();
     public searchPageStays(){
         PageFactory.initElements(new AppiumFieldDecorator(AppDriver.getDriver()), this);
     }
@@ -50,63 +52,44 @@ public class searchPageStays {
     @FindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Navigate up\"]")
     public WebElement cancelsignin_btn;
 
-
-
-    public void waitforElement(WebDriver d, WebElement elem){
-        WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(100));
-        wait.until(ExpectedConditions.visibilityOf(elem));
-    }
-
     public void clickOnSearch(){
-        waitforElement(AppDriver.getDriver(),search_Btn);
-        search_Btn.click();
+        w.clickButton(search_Btn);
     }
     public void clickOnStays(){
-        waitforElement(AppDriver.getDriver(),stays_tabBtn);
-        stays_tabBtn.click();
+        w.clickButton(stays_tabBtn);
     }
     public void clickOnAccLocation(){
-        waitforElement(AppDriver.getDriver(),acclocation_txtBtn);
-        acclocation_txtBtn.click();
+        w.clickButton(acclocation_txtBtn);
     }
 
     public void enterAccLocation(String location){
-        waitforElement(AppDriver.getDriver(),acclocation_txtField);
-        acclocation_txtField.sendKeys(location);
+        w.clickButton(acclocation_txtField);
     }
 
     public void clickOnTopLocation(){
-        waitforElement(AppDriver.getDriver(),topacclocation_btn);
-        topacclocation_btn.click();
+        w.clickButton(topacclocation_btn);
     }
-
 
     public void selectDatePicker(){
-        waitforElement(AppDriver.getDriver(),datepicker_btn);
-        datepicker_btn.click();
+        w.clickButton(datepicker_btn);
     }
     public void clickOnOccupancy(){
-        waitforElement(AppDriver.getDriver(),occupancy_txtBtn);
-        occupancy_txtBtn.click();
+        w.clickButton(occupancy_txtBtn);
     }
 
     public void clickOnMemberAddition(){
-        waitforElement(AppDriver.getDriver(),add_members);
-        add_members.click();
+        w.clickButton(add_members);
     }
 
     public void clickOnApply(){
-        waitforElement(AppDriver.getDriver(),apply_btn);
-        apply_btn.click();
+        w.clickButton(apply_btn);
     }
 
     public void search(){
-        waitforElement(AppDriver.getDriver(),search_btn);
-        search_btn.click();
+        w.clickButton(search_btn);
     }
 
     public void cancelSignIn(){
-        waitforElement(AppDriver.getDriver(),cancelsignin_btn);
-        cancelsignin_btn.click();
+        w.clickButton(cancelsignin_btn);
     }
 }

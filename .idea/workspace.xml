@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb80b583-bc5e-4f06-8096-117a3215ce4e" name="Changes" comment="appium project">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AppiumSession2_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/bookingsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/bookingsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/loginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/loginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/actionWrappers/wrappers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actionWrappers/wrappers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseTest/AppFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseTest/AppFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/bookingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/bookingsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/loginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/configReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/configReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tests/loginTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tests/loginTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/searchPageAttractions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/searchPageAttractions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/searchPageStays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/searchPageStays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/actionWrappers/wrappers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/actionWrappers/wrappers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/baseTest/AppFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/baseTest/AppFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/loginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/loginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/configReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/configReader.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

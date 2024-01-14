@@ -46,57 +46,37 @@ public class loginPage {
     @FindBy(id = "com.booking:id/action_primary")
     public WebElement signintosave_btn;
 
-
-    public void waitforElement(WebDriver d, WebElement elem){
-        WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(100));
-        wait.until(ExpectedConditions.visibilityOf(elem));
-    }
-
-    public void waitforElement(WebDriver d, List<WebElement> elem){
-        WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(100));
-        wait.until(ExpectedConditions.visibilityOfAllElements(elem));
-    }
-
     public void clickOnCreateAccount(){
-        waitforElement(AppDriver.getDriver(),sign_withEmail);
-        //sign_withEmail.click();
         w.clickButton(sign_withEmail);
     }
 
     public void enterEmail(String email){
-        waitforElement(AppDriver.getDriver(),userName_txtField);
-        //userName_txtField.sendKeys(email);
         w.sendText(userName_txtField,email);
     }
 
     public void enterPassword(String pass){
-        waitforElement(AppDriver.getDriver(), imageEyeIcon);
-        waitforElement(AppDriver.getDriver(), password_txtField);
-        password_txtField.get(0).sendKeys(pass);
+        w.waitforElements(w.driver, imageEyeIcon);
+        w.waitforElements(w.driver, password_txtField);
+        w.sendKeysToFirstElement(password_txtField,pass,0);
     }
 
     public void enterConfirmPassword(String pass){
-        waitforElement(AppDriver.getDriver(),password_txtField);
-        password_txtField.get(1).sendKeys(pass);
+        w.sendKeysToFirstElement(password_txtField,pass,1);
     }
 
     public void clickContinueBtn (){
-       waitforElement(AppDriver.getDriver(),continue_btn);
-       continue_btn.click();
+       w.clickButton(continue_btn);
     }
 
     public void createAccountBtn(){
-        waitforElement(AppDriver.getDriver(),createAccount_btn);
-        createAccount_btn.click();
+        w.clickButton(createAccount_btn);
     }
 
     public void onbaordingBtn(){
-        waitforElement(AppDriver.getDriver(),onboarding_btn);
-        onboarding_btn.click();
+        w.clickButton(onboarding_btn);
     }
 
     public void clickOnSignintosave(){
-        waitforElement(AppDriver.getDriver(),signintosave_btn);
         w.clickButton(signintosave_btn);
     }
 

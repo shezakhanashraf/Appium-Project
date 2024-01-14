@@ -1,5 +1,6 @@
 package pages;
 
+import actionWrappers.wrappers;
 import baseTest.AppDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +14,7 @@ import java.time.Duration;
 
 public class bookingsPage {
 
+    wrappers w = new wrappers();
     public bookingsPage(){
         PageFactory.initElements(new AppiumFieldDecorator(AppDriver.getDriver()), this);
     }
@@ -42,50 +44,39 @@ public class bookingsPage {
     public WebElement screen;
 
 
-    public void waitforElement(WebDriver d, WebElement elem){
-        WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(100));
-        wait.until(ExpectedConditions.visibilityOf(elem));
-    }
-
     public void clickOnBooking(){
-        waitforElement(AppDriver.getDriver(),bookings_btn);
-        bookings_btn.click();
+        w.clickButton(bookings_btn);
     }
 
     public void clickOnBookingDetails(){
-        waitforElement(AppDriver.getDriver(),bookingdetails_btn);
-        bookingdetails_btn.click();
+        w.clickButton(bookingdetails_btn);
     }
 
     public void clickOnCarRental(){
-        waitforElement(AppDriver.getDriver(),carrentals_btn);
-        carrentals_btn.click();
+        w.clickButton(carrentals_btn);
     }
 
     public void enterEmailId(String email){
-        waitforElement(AppDriver.getDriver(),email_textField);
-        email_textField.click();
-        email_textField.sendKeys(email);
+        w.waitforElement(w.driver, email_textField);
+        w.clickButton(email_textField);
+        w.sendText(email_textField,email);
     }
 
     public void enterBookingRef(String bookref){
-        waitforElement(AppDriver.getDriver(),bookingref_textField);
-        bookingref_textField.click();
-        bookingref_textField.sendKeys(bookref);
+        w.waitforElement(w.driver, bookingref_textField);
+        w.clickButton(bookingref_textField);
+        w.sendText(bookingref_textField,bookref);
     }
 
     public void clickOnFindBooking(){
-        waitforElement(AppDriver.getDriver(),findbooking_Btn);
-        findbooking_Btn.click();
+        w.clickButton(findbooking_Btn);
     }
 
     public void cancelSignIn(){
-        waitforElement(AppDriver.getDriver(),cancelsignin_btn);
-        cancelsignin_btn.click();
+        w.clickButton(cancelsignin_btn);
     }
 
     public void clickOnScreen(){
-        waitforElement(AppDriver.getDriver(),screen);
-        screen.click();
+        w.clickButton(screen);
     }
 }
